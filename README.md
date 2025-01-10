@@ -14,3 +14,9 @@ We check if the file exists and create one if it wasn't the case
 
 getaddrinfo: Resolves symbolic addresses into usable addresses for network communication.
 Use getnameinfo to extract and display the resolved IP and port to verify the connection is correctly set up.
+
+# Step 3 - Reserve a connection socket to the server.
+
+Creating the socket: To connect to the server, we create a socket using the resolved address information:
+
+' sd = socket(result->ai_family, result->ai_socktype, result->ai_protocol); '
