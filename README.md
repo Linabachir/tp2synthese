@@ -19,4 +19,4 @@ Use getnameinfo to extract and display the resolved IP and port to verify the co
 
 Creating the socket: To connect to the server, we create a socket using the resolved address information:
 
-`sd = socket(result->ai_family, result->ai_socktype, result->ai_protocol); ‘ 
+```  sd = socket(result->ai_family, result->ai_socktype, result->ai_protocol);  ```
