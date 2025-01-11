@@ -45,3 +45,5 @@ The program:
 ˋˋˋ  write(fd, buffer + 4, bytes - 4);  ˋˋˋ
 
 If the file is larger than 512 bytes, the server sends multiple DAT packets
+
+I woild like to express my gratitude to Mr. Tauvel for his support and insightful advice during this project.
