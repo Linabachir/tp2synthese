@@ -42,7 +42,6 @@ After sending the RRQ, the server responds with the first DAT packet containing 
 The program:
 		Receives the packet using recvfrom.
 	  Writes the file data (excluding the 4-byte header) to the local file:
-
-‘‘‘  write(fd, buffer + 4, bytes - 4);  ‘‘‘
+ˋˋˋ  write(fd, buffer + 4, bytes - 4);  ˋˋˋ
 
 If the file is larger than 512 bytes, the server sends multiple DAT packets
