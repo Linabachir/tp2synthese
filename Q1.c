@@ -6,16 +6,17 @@
 #include <unistd.h>
 #include <sys/stat.h>
 
+// TFTP Client: Downloads a file from a TFTP server
 int main(int argc, char ** argv) {
     printf("TFTP Client \n");
-
+ // Check mmand-line arguments
     if (argc != 4){
         printf("Wrong command \n");
         exit(EXIT_FAILURE);
     }
 
     int fd=open(argv[3],O_CREAT|O_WRONLY,S_IRWXG|S_IRWXU|S_IRWXO);
-
+// Resolve the server address
     struct addrinfo hints;
     struct addrinfo * result;
     memset(&hints,0,sizeof(struct addrinfo));
